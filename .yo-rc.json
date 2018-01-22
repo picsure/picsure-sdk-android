@@ -1,0 +1,6 @@
+{
+  "generator-android-library": {
+    "appPackage": "com.picsure.android_lib",
+    "appName": "picsure-sdk-android"
+  }
+}

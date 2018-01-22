@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Picsure Library Android</string>
+
+  <string name="status_fail_upload">Bild wurde nicht übertragen</string>
+  <string name="status_fail_recognize">Es wurde nichts erkannt</string>
+  <string name="status_fail_no_result">Kein Angebot gefunden</string>
+</resources>

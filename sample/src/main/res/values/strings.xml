@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">picsure-sdk-android</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="take_gallery">Select photo from gallery</string>
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+    <string name="label_cancel">Abbrechen</string>
+    <string name="label_ok">OK</string>
+    <string name="label_select_picture">Bild auswählen</string>
+
+</resources>

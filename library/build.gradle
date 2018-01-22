@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+def ext = rootProject.ext
+
+android {
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+bintray {
+    user = ext.bintrayUser
+    key = ext.bintrayKey
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.mcxiaoke.volley:library:1.0.18'
+    compile 'com.squareup.okhttp3:okhttp:3.7.0'
+    compile "com.android.support:exifinterface:27.0.2"
+}
+
+
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
