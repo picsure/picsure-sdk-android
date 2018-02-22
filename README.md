@@ -6,13 +6,13 @@
 
 Picsure generates insurance proposals based on image informations within seconds. This is the worldwide first AI in the insurance business based on image recognitions. We are providing our White-Label-API for insurance companies which allows them to create a new and full digital sales channel for their customers.
 
-## Download 🚀
-Grab via Gradle:
+## Installation ⚙️ ##
+#### [Gradle](https://gradle.org/docs/)
 ```
 compile 'com.picsure:picsure_lib_android:1.1.0'
 
 ```
-Or Maven:
+#### [Maven](https://maven.apache.org/guides/)
 ```
 <dependency>
   <groupId>com.picsure</groupId>
@@ -27,9 +27,9 @@ Or Maven:
 - Android SDK 15+
 
 
-## How to use Picsure Library?
+## Usage 🚀 ##
 
-Example of Usage:
+
 ```java
 //Init Picsure SDK with context and API_KEY
 Picsure picsure = new Picsure(this, YOUR_API_KEY);
@@ -63,7 +63,7 @@ Upload a photo file to the Picsure API:
 picsure.uploadPhoto(photoFile);
 ```
 
-This is an example of a result JSON for a Laptop:
+This is an example result JSON:
 ```json
 {
   "object_recognition": [
